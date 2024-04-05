@@ -7,7 +7,7 @@ const Home = () => {
             <div className="search">
                 <div className="inputs">
                     <div className="logo">
-                        <h2>View Our React Recipes</h2>
+                        <h2>REACT RECIPES</h2>
                         <small>Find the recipes you love best</small>
                     </div>
                     <form>

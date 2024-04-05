@@ -14,4 +14,15 @@
     height: 400px;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .inputs {
+    margin-top: 250px;
+    padding-left: 40px;
+    
 }
