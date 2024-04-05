@@ -8,7 +8,7 @@ const Home = () => {
                 <div className="inputs">
                     <div className="logo">
                         <h2>REACT RECIPES</h2>
-                        <small>Find the recipes you love best</small>
+                        <small className="small-text">Find the recipes you love best</small>
                     </div>
                     <form>
                         <input type="text" />
