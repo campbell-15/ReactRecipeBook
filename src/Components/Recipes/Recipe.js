@@ -17,7 +17,7 @@ const Recipes = () => {
             </div>
             <div className="recipe-results">
                 <div className="recipe">
-                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt="" width="100px" height="100px"/>
+                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt=""/>
                     <div className="recipe-content">
                         <h3>Cheese Burger</h3>
                         <small>800cal</small>
@@ -26,6 +26,47 @@ const Recipes = () => {
                         </div>
                         <div className="ingredients">
                         <button type="text">Ingredients</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="recipe">
+                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt=""/>
+                    <div className="recipe-content">
+                        <h3>Cheese Burger</h3>
+                        <small>800cal</small>
+                        <div className="bio">
+                            <p>Juiciest Burger Ever.</p>
+                        </div>
+                        <div className="ingredients">
+                        <button type="text">Ingredients</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="recipe">
+                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt=""/>
+                    <div className="recipe-content">
+                        <h3>Cheese Burger</h3>
+                        <small>800cal</small>
+                        <div className="bio">
+                            <p>Juiciest Burger Ever.</p>
+                        </div>
+                        <div className="ingredients">
+                        <button type="text">Ingredients</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="recipe">
+                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt=""/>
+                    <div className="recipe-content">
+                        <h3>Cheese Burger</h3>
+                        <small>800cal</small>
+                        <div className="info">
+                            <div className="bio">
+                                <p>Juiciest Burger Ever.</p>
+                            </div>
+                            <div className="ingredients">
+                            <button type="text">Ingredients</button>
+                            </div>
                         </div>
                     </div>
                 </div>
