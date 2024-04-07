@@ -30,9 +30,9 @@ const Recipes = () => {
                     </div>
                 </div>
                 <div className="recipe">
-                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt=""/>
+                    <img src="https://recipes.net/wp-content/uploads/2023/05/papa-johns-pepperoni-pizza-recipe_73a08afc185dba371d10414961f2cb0c.jpeg" alt=""/>
                     <div className="recipe-content">
-                        <h3>Cheese Burger</h3>
+                        <h3>Pepperoni Pizza</h3>
                         <small>800cal</small>
                         <div className="bio">
                             <p>Juiciest Burger Ever.</p>
@@ -43,9 +43,9 @@ const Recipes = () => {
                     </div>
                 </div>
                 <div className="recipe">
-                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt=""/>
+                    <img src="https://www.halfbakedharvest.com/wp-content/uploads/2018/08/Better-Together-Chocolate-Vanilla-Birthday-Cake-1.jpg" alt=""/>
                     <div className="recipe-content">
-                        <h3>Cheese Burger</h3>
+                        <h3>Chocolate Cake</h3>
                         <small>800cal</small>
                         <div className="bio">
                             <p>Juiciest Burger Ever.</p>
@@ -56,9 +56,9 @@ const Recipes = () => {
                     </div>
                 </div>
                 <div className="recipe">
-                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt=""/>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7JL2PjLIezLEwDQRqK8cVWon6YoNl77WZPcqgv2M_RA&s" alt=""/>
                     <div className="recipe-content">
-                        <h3>Cheese Burger</h3>
+                        <h3>T-Bone Steak</h3>
                         <small>800cal</small>
                         <div className="info">
                             <div className="bio">
