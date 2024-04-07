@@ -132,3 +132,16 @@
         border: none;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+
+    .logo {
+        margin-bottom: 20px; /* Add space below the logo */
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Align text inside inputs section */
+        margin-bottom: 20px; /* Add space between search bar and recipe cards */
+    }
