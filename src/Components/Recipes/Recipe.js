@@ -39,6 +39,18 @@ const Recipe = () => {
         }
     ]);
 
+    const [searchQuery, setSearchQuery] = useState("");
+
+    // Function to handle search query change
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value);
+    };
+
+    // Filter recipes based on search query
+    const filteredRecipes = recipes.filter(recipe =>
+        recipe.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
     return (
         <div className="recipes">
             <div className="inputs">
@@ -47,12 +59,12 @@ const Recipe = () => {
                     <small className="small-text">Find the recipes you love best</small>
                 </div>
                 <form>
-                    <input type="text" />
+                    <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for a recipe..." />
                     <button type="submit">Search</button>
                 </form>
             </div>
             <ul className="cards">
-                {recipes.map(recipe => (
+                {filteredRecipes.map(recipe => (
                     <li key={recipe.id} className="card">
                         <img src={recipe.imageURL} className="card__image" alt={recipe.title} />
                         <div className="card__overlay">
