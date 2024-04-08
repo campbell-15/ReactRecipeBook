@@ -36,6 +36,22 @@ const Recipe = () => {
             ingredients: ["T-Bone steak", "Salt", "Pepper", "Olive oil"],
             tagLine: ["Yummiest T-Bone Steak in South Africa"],
             imageURL: "https://images.immediate.co.uk/production/volatile/sites/2/2018/10/Pan-Fried-T-Bone-Steak-284bfa5.jpg"
+        },
+        {
+            id: 5,
+            title: "Lasagna",
+            description: "Savory layers of pasta, rich tomato sauce, creamy cheese, and seasoned ground meat come together in this classic Italian comfort dish.",
+            ingredients: ["lasagna noodles", "ground beef", "tomato sauce", "ricotta cheese", "mozzarella cheese"],
+            tagLine: ["Quick and easy meal for the family"],
+            imageURL: "https://assets.epicurious.com/photos/6508a14155b19af4200459c7/4:6/w_1932,h_2898,c_limit/Sausage-Cheese-Basil-Lasanga_RECIPE.jpg"
+        },
+        {
+            id: 6,
+            title: "Pepper & Steak Pie",
+            description: "Indulge in a savory delight with our Pepper & Steak Pie – A harmonious blend of tender steak and flavorful peppers baked to perfection in a flaky crust.",
+            ingredients: ["steak", "bell peppers", "onion", "flour", "beef broth", "puff pastry"],
+            tagLine: ["Try something new! You won't regret it..."],
+            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuCXkwS6WKizF3JRIPyJ3wkKG_VTNj9tHeenCLp7hlg&s"
         }
     ]);
 
