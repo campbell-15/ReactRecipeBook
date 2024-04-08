@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Home/Home.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     // State
@@ -28,8 +30,10 @@ const Home = () => {
                         <small className="small-text">Find the recipes you love best</small>
                     </div>
                     <form>
-                        <input type="text" value={query} onChange={handleQuery}/>
-                        <button onClick={handleSearch}>Search</button>
+                        <input type="text" value={query} onChange={handleQuery} placeholder="Explore meals..."/>
+                        <button type="text" onClick={handleSearch}>
+                            <FontAwesomeIcon icon={faSearch} />
+                        </button>
                     </form>
                 </div>
             </div>
