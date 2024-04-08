@@ -1,6 +1,9 @@
 import './Recipe.css';
 import React, { useState } from "react";
 import './Recipe.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 const Recipe = () => {
     // setRecipes is not used yet
@@ -69,7 +72,16 @@ const Recipe = () => {
 
     return (
         <div className="recipes">
-            <div className="inputs">
+            <h1 className='title'>React Recipes</h1>
+            <form className="form-container">
+            <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for a recipe..." />
+            <button type="button">
+                <FontAwesomeIcon icon={faSearch} />
+            </button>
+            </form>
+
+
+            {/* <div className="inputs">
                 <div className="logo">
                     <h2>REACT RECIPES</h2>
                     <small className="small-text">Find the recipes you love best</small>
@@ -78,7 +90,7 @@ const Recipe = () => {
                     <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for a recipe..." />
                     <button type="submit">Search</button>
                 </form>
-            </div>
+            </div> */}
             <ul className="cards">
                 {filteredRecipes.map(recipe => (
                     <li key={recipe.id} className="card">
