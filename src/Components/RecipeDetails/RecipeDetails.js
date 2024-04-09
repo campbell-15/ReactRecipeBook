@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import './RecipeDetails.css'
 
-function RecipeDetails() {
+const RecipeDetails = () => {
     // Access the id parameter from the URL
     const { id } = useParams();
 
