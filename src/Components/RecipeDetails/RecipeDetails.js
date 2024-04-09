@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-// import './RecipeDetails.css'
+import './RecipeDetails.css'
 
 function RecipeDetails() {
     // Access the id parameter from the URL
@@ -69,10 +69,10 @@ function RecipeDetails() {
     return (
         <div>
             <div className="button-container">           
-                <Link to="/" className="button">Back</Link>
+                <Link to="/" className="back-button">Back</Link>
             </div>
             <div className="deatils-card">
-                <h1>{recipe.title}</h1>
+                <h1 className="ingredients-title">{recipe.title}</h1>
                 <p>{recipe.description}</p>
                 <h2>Ingredients:</h2>
                 <ul>
