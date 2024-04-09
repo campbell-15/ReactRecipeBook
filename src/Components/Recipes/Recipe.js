@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import './Recipe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+// import { Link } from 'react-router-dom';
 
 
 const Recipe = () => {
@@ -58,6 +59,11 @@ const Recipe = () => {
         }
     ]);
 
+    const handleRecipeDetails = (recipeId) => {
+        // Navigate to the RecipeDetails page for the specific recipe
+        window.location.href = `/recipe/${recipeId}`;
+    };
+
     const [searchQuery, setSearchQuery] = useState("");
 
     // Function to handle search query change
@@ -102,7 +108,7 @@ const Recipe = () => {
                                 <div className="card__header-text">
                                     <h3 className="card__title">{recipe.title}</h3>
                                     <span className="card__tagline">{recipe.tagLine}</span>
-                                    <button type="text" className="ingredients">Ingredients</button>
+                                    <button type="button" className="ingredients" onClick={() => handleRecipeDetails(recipe.id)}>Ingredients</button>
                                 </div>
                             </div>
                             <p className="card__description">{recipe.description}</p>
