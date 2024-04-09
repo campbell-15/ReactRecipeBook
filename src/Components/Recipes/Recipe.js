@@ -1,6 +1,5 @@
 import './Recipe.css';
 import React, { useState } from "react";
-import './Recipe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 // import { Link } from 'react-router-dom';
