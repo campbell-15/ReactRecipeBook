@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import './RecipeDetails.css'
+// import './RecipeDetails.css'
 
 function RecipeDetails() {
     // Access the id parameter from the URL
