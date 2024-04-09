@@ -6,7 +6,7 @@ function RecipeDetails() {
     // Access the id parameter from the URL
     const { id } = useParams();
 
-    // Sample recipe data (replace this with your actual recipe data)
+    // Sample recipe data
     const [recipes] = useState([
         {
             id: 1,
