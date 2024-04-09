@@ -15,12 +15,12 @@
     }
     
     .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
         gap: 2rem !important;
-        margin: 4rem 5vw;
-        padding: 0;
-        list-style-type: none;
+        margin: 4rem 5vw !important;
+        padding: 0 !important;
+        list-style-type: none !important;
 
         @media (max-width: 768px) {
             display: flex;
