@@ -1,13 +1,12 @@
-import './Recipe.css';
 import React, { useState } from "react";
-import './Recipe.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-// import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
+function RecipeDetails() {
+    // Access the id parameter from the URL
+    const { id } = useParams();
 
-const Recipe = () => {
-    // setRecipes is not used yet
+    // Sample recipe data (replace this with your actual recipe data)
     const [recipes] = useState([
         {
             id: 1,
@@ -59,66 +58,30 @@ const Recipe = () => {
         }
     ]);
 
-    const handleRecipeDetails = (recipeId) => {
-        // Navigate to the RecipeDetails page for the specific recipe
-        window.location.href = `/recipe/${recipeId}`;
-    };
+    // Find the recipe with the matching id
+    const recipe = recipes.find(recipe => recipe.id === parseInt(id));
 
-    const [searchQuery, setSearchQuery] = useState("");
-
-    // Function to handle search query change
-    const handleSearchChange = (e) => {
-        setSearchQuery(e.target.value);
-    };
-
-    // Filter recipes based on search query
-    const filteredRecipes = recipes.filter(recipe =>
-        recipe.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    if (!recipe) {
+        return <div>No recipe found for id: {id}</div>;
+    }
 
     return (
-        <div className="recipes">
-            <h1 className='title'>React Recipes</h1>
-            <form className="form-container">
-            <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for a recipe..." />
-            <button type="button">
-                <FontAwesomeIcon icon={faSearch} />
-            </button>
-            </form>
-
-
-            {/* <div className="inputs">
-                <div className="logo">
-                    <h2>REACT RECIPES</h2>
-                    <small className="small-text">Find the recipes you love best</small>
-                </div>
-                <form>
-                    <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for a recipe..." />
-                    <button type="submit">Search</button>
-                </form>
-            </div> */}
-            <ul className="cards">
-                {filteredRecipes.map(recipe => (
-                    <li key={recipe.id} className="card">
-                        <img src={recipe.imageURL} className="card__image" alt={recipe.title} />
-                        <div className="card__overlay">
-                            <div className="card__header">
-                                <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img className="card__thumb" src="https://static.vecteezy.com/system/resources/previews/002/233/113/non_2x/restaurant-service-abstract-logo-template-symbol-icon-free-vector.jpg" alt="" />
-                                <div className="card__header-text">
-                                    <h3 className="card__title">{recipe.title}</h3>
-                                    <span className="card__tagline">{recipe.tagLine}</span>
-                                    <button type="button" className="ingredients" onClick={() => handleRecipeDetails(recipe.id)}>Ingredients</button>
-                                </div>
-                            </div>
-                            <p className="card__description">{recipe.description}</p>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+        <div>
+            <div className="button-container">           
+                <Link to="/" className="button">Back</Link>
+            </div>
+            <div>
+                <h1>{recipe.title}</h1>
+                <p>{recipe.description}</p>
+                <h2>Ingredients:</h2>
+                <ul>
+                    {recipe.ingredients.map((ingredient, index) => (
+                        <li key={index}>{ingredient}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }
 
-export default Recipe;
-
+export default RecipeDetails;
