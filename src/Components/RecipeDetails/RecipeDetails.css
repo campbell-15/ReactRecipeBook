@@ -9,6 +9,23 @@
     margin-top: 3px;
 }
 
+.deatils-card {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 80%;
+    margin: 0 auto; /* Horizontally center the div */
+    margin-top: 20px;
+}
+
 .ingredients-title {
     color: black;
+    text-align: center;
+}
+
+.ingredients-description {
+    text-align: center;
 }

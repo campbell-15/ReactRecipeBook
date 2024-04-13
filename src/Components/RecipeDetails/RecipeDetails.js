@@ -15,7 +15,8 @@ const RecipeDetails = () => {
             description: "Savor the classic harmony of juicy beef, melted cheese, and fresh fixings in every bite of our signature cheeseburger.",
             ingredients: ["Beef patty", "Cheese", "Lettuce", "Tomato", "Burger bun"],
             tagLine: ["Juicest Cheese Burger you will ever taste"],
-            imageURL: "https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg"
+            imageURL: "https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg",
+            prep: ["cook burger patty for 10 minutes on 200 degrees, assemble ingredients in order"]
         },
         {
             id: 2,
@@ -73,7 +74,7 @@ const RecipeDetails = () => {
             </div>
             <div className="deatils-card">
                 <h1 className="ingredients-title">{recipe.title}</h1>
-                <p>{recipe.description}</p>
+                <p className="ingredient-description">{recipe.description}</p>
                 <h2>Ingredients:</h2>
                 <ul>
                     {recipe.ingredients.map((ingredient, index) => (
