@@ -1,14 +1,59 @@
-.back-button {
-    width: 60px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    text-decoration: none;
-    margin: 3px;
-    margin-top: 3px;
+.details-card {
+    width: 40%;
+    /* max-width: 380px; */
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.ingredients-title {
-    color: black;
+.details-card__title {
+    font-size: 1.5em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+    border-bottom: 1px solid #6A515E;
+    padding-bottom: 0.5em;
+}
+
+.details-card__description {
+    margin: 0 0 1em;
+    color: #6A515E;
+}
+
+.details-card__ingredient-list {
+    margin-bottom: 1em;
+}
+
+.details-card__ingredient-list li {
+    color: #6A515E;
+}
+
+.details-card__prep {
+    color: #6A515E;
+}
+
+.button-container {
+    margin-bottom: 1em;
+}
+
+.back-button {
+    background-color: white;
+    border: 1px solid #6A515E;
+    color: #6A515E;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #6A515E;
+    color: white;
+}
+
+.details-heading {
+    color: #6A515E;
+    border-bottom: 1px solid #6A515E;
+    padding-bottom: 0.5em;
 }
